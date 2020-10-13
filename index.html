@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="shoping">
+
+<head>
+    <base href="https://dev-alienx.github.io/mobile_shop_AngularJs/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <title>Document</title>
+</head>
+
+<body ng-class="bodyDarkLight" data-ng-init="initNew()" ng-controller="bodyController">
+    <div ng-controller="mainCtrl as main">
+        <div nav-bar data-ng-init="init()"></div>
+        <div ng-view ng-class="bgDarkLight"></div>
+        <div class="clock"></div>
+    </div>
+    <script src="Angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.6/angular-filter.js"></script>
+    <script src="app.js"></script>
+    <script src="homeController.js"></script>
+    </body>
+
+</html>
